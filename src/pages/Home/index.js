@@ -1,13 +1,16 @@
-import React from 'react'
-import { View, Text, StyleSheet} from 'react-native'
+import React from 'react';
+import { View, Text, Button} from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
-export default function Home(){
-    return(
-        <View style={styles.container}>
-            <Text>Home</Text>
-        </View>
-    )
+
+export default function Home() {
+  const navigation = useNavigation();
+ return (
+   <View>
+     <Text>Home</Text>
+     <Button
+     title="Contato"
+     onPress={ () => navigation.navigate('Contato') }/>
+   </View>
+  );
 }
-const styles = StyleSheet.create({
-    flex: 1,
-})

@@ -1,10 +1,10 @@
-import Reaxr from 'react'
-import { View, Text, StyleSheet} from 'react-native'
+import React from 'react';
+import { View, Text} from 'react-native';
 
-export default function Sobre(){
-    return(
-        <View>
-            <Text>Contato</Text>
-        </View>
-    )
+export default function Sobre() {
+ return (
+   <View>
+     <Text>Sobre</Text>
+   </View>
+  );
 }
